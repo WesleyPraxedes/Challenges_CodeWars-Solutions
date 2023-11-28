@@ -1,6 +1,6 @@
 package code_wars;
 
-public class Kata {
+public class Check_same_case4 {
 	public static int sameCase(char a, char b) {
 		if ((Character.isLowerCase(a) && Character.isLowerCase(b)) ||
 		    (Character.isUpperCase(a) && Character.isUpperCase(b))) {
