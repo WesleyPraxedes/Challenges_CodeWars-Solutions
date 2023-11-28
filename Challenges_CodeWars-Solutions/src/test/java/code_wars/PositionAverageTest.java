@@ -1,15 +1,15 @@
 package code_wars;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class PositionAverage4Test {
+public class PositionAverageTest {
 
     private static void assertFuzzy(String s, double exp){
-        System.out.println("Testing " + s);
+        //System.out.println("Testing " + s);
         boolean inrange;
         double merr = 1e-9;
-        double actual = PositionAverage4.posAverage(s);
+        double actual = PositionAverage.posAverage(s);
         inrange = Math.abs(actual - exp) <= merr;
         if (inrange == false) {
             System.out.println("Expected mean must be near " + exp +", got " + actual);
